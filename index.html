@@ -1,19 +1,12 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.1.1/dist/aframe-environment-component.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
-        <a-assets>
-            <a-asset-item id="musée" src="https://github.com/Brandondgb/Tp_WebXR/blob/main/Asset/Jarre.glb"></a-asset-item>
-        </a-assets>
-        <a-entity gltf-model="#musée" scale="2 2 2" position="0 1 0"></a-entity>
-        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
-        <a-entity id="rig" position="0 4 0" rotation="0 180 0">
-            <a-entity camera look-controls wasd-controls="acceleration:60" position="000"></a-entity>
-        </a-entity>
-      </a-scene>
-      
+      <a-entity gltf-model="https://votre-utilisateur.github.io/modeles-3d/mon-modele.glb" position="0 1 -3"></a-entity>
+      <a-camera position="0 1.6 0"></a-camera>
+    </a-scene>
   </body>
 </html>
